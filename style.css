@@ -1,0 +1,52 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  background-color: lightgray;
+  background-position: center bottom;
+}
+
+.title {
+  position: center;
+}
+
+.subtitle {
+  position: center;
+}
+
+.container {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+  text-align: center;
+}
+
+.upgrade {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+  padding: 20px;
+  max-width: 80%;
+}
+
+.upgrade button {
+  background-color: gray;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "Roboto Mono", monospace;
+  min-width: 150px;
+}
+
+.upgrade button:hover { /*Mouse on top*/
+  background-color: lightslategray;
+  transform: scale(1.05);
+}
+
+.upgrade button:active { /*Being clicked*/
+  transform: scale(0.95);
+}
