@@ -5,48 +5,29 @@ body {
 }
 
 .title {
-  position: center;
-}
-
-.subtitle {
-  position: center;
-}
-
-.container {
-  display: flex; 
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-  height: 100vh;
   text-align: center;
 }
 
-.upgrade {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 15px;
-  padding: 20px;
-  max-width: 80%;
+.subtitle {
+  text-align: center;
 }
 
-.upgrade button {
-  background-color: gray;
-  color: white;
-  padding: 15px;
-  border-radius: 8px;
+button {
+  text-align: center;
   cursor: pointer;
-  font-family: "Roboto Mono", monospace;
-  min-width: 150px;
+  font-size: 64px;
+  background-color: gray;
+  border-radius: 12px;
+  width: 64px;
+  height: 64px;
 }
 
-.upgrade button:hover { /*Mouse on top*/
+button:hover { /*Mouse on top*/
   background-color: lightslategray;
   transform: scale(1.05);
 }
 
-.upgrade button:active { /*Being clicked*/
+button:active { /*Being clicked*/
+  background-color: rgb(185, 185, 185);
   transform: scale(0.95);
 }
