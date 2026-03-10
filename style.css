@@ -10,6 +10,7 @@ body {
 
 button {
   text-align: center;
+  position: center;
   cursor: pointer;
   font-size: 64px;
   background-color: gray;
