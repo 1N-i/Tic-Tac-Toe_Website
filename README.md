@@ -1,2 +1,2 @@
-# Tic-Tac-Toe_Website
+# Tic-Tac-Toe (Website)
 Tic Tac Toe
