@@ -1,14 +1,10 @@
 body {
   font-family: "Roboto Mono", monospace;
   background-color: lightgray;
-  background-position: center bottom;
+  background-position: center;
 }
 
-.title {
-  text-align: center;
-}
-
-.subtitle {
+.text {
   text-align: center;
 }
 

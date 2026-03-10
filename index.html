@@ -2,28 +2,28 @@
     <head>
         <title>Tic-Tac-Toe</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="app-icon.ico" type="image/x-icon">
     </head>
 
     <body>
-        <h1 class="title">Tic-Tac-Toe</h1>
-        <h3 class="subtitle" id="text">Player 1 turn</h3>
+        <h1 class="text">Tic-Tac-Toe</h1>
+        <h3 class="text" id="playerText">Player "X" turn</h3>
+        <h2 class="text" id="winText"> </h2>
 
-        <div class="buttons">
-            <div class="lane1">
-                <button onclick="place1()" id="bt1"> </button>
-                <button onclick="place2()" id="bt2"> </button>
-                <button onclick="place3()" id="bt3"> </button>
-            </div>
-            <div class="lane2">
-                <button onclick="place4()" id="bt4"> </button>
-                <button onclick="place5()" id="bt5"> </button>
-                <button onclick="place6()" id="bt6"> </button>
-            </div>
-            <div class="lane3">
-                <button onclick="place7()" id="bt7"> </button>
-                <button onclick="place8()" id="bt8"> </button>
-                <button onclick="place9()" id="bt9"> </button>
-            </div>
+        <div>
+            <button onclick="place1()" id="bt1"> </button>
+            <button onclick="place2()" id="bt2"> </button>
+            <button onclick="place3()" id="bt3"> </button>
+        </div>
+        <div>
+            <button onclick="place4()" id="bt4"> </button>
+            <button onclick="place5()" id="bt5"> </button>
+            <button onclick="place6()" id="bt6"> </button>
+        </div>
+        <div>
+            <button onclick="place7()" id="bt7"> </button>
+            <button onclick="place8()" id="bt8"> </button>
+            <button onclick="place9()" id="bt9"> </button>
         </div>
 
         <script src="script.js"></script>
