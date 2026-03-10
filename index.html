@@ -6,18 +6,24 @@
 
     <body>
         <h1 class="title">Tic-Tac-Toe</h1>
-        <h3 class="subtitle" id="turn">Player 1 turn</h3>
+        <h3 class="subtitle" id="text">Player 1 turn</h3>
 
         <div class="buttons">
-            <button onclick="place1()" id="bt1"> </button>
-            <button onclick="place2()" id="bt2"> </button>
-            <button onclick="place3()" id="bt3"> </button>
-            <button onclick="place4()" id="bt4"> </button>
-            <button onclick="place5()" id="bt5"> </button>
-            <button onclick="place6()" id="bt6"> </button>
-            <button onclick="place7()" id="bt7"> </button>
-            <button onclick="place8()" id="bt8"> </button>
-            <button onclick="place9()" id="bt9"> </button>
+            <div class="lane1">
+                <button onclick="place1()" id="bt1"> </button>
+                <button onclick="place2()" id="bt2"> </button>
+                <button onclick="place3()" id="bt3"> </button>
+            </div>
+            <div class="lane2">
+                <button onclick="place4()" id="bt4"> </button>
+                <button onclick="place5()" id="bt5"> </button>
+                <button onclick="place6()" id="bt6"> </button>
+            </div>
+            <div class="lane3">
+                <button onclick="place7()" id="bt7"> </button>
+                <button onclick="place8()" id="bt8"> </button>
+                <button onclick="place9()" id="bt9"> </button>
+            </div>
         </div>
 
         <script src="script.js"></script>

@@ -1,93 +1,95 @@
-let but1, but2, but3, but4, but5, but6, but7, but8, but9
-but1 = but2 = but3 = but4 = but5 = but6 = but7 = but8 = but9 = false
+let btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9
+btn1 = btn2 = btn3 = btn4 = btn5 = btn6 = btn7 = btn8 = btn9 = false
 
 let player = "X"
 
-function switchPlayer() {
+function switchPlayer(play, text) {
     if (player === "X"){
         player = "O"
     } else {
         player = "X"
     }
+    play.innerHTML = player
+    text.innerHTML = `Player "${player}" turn`
 }
 
 function place1(){
-    if (but1 === false){
-        const elementResult = document.getElementById("bt1")
-        elementResult.innerHTML = player
-        switchPlayer()
-        but1 = true
+    if (btn1 === false){
+        const play = document.getElementById("bt1")
+        const text = document.getElementById("text")
+        switchPlayer(play, text)
+        btn1 = true
     }
 }
 
 function place2(){
-    if (but2 === false){
-        const elementResult = document.getElementById("bt2")
-        elementResult.innerHTML = player
-        switchPlayer()
-        but2 = true
+    if (btn2 === false){
+        const play = document.getElementById("bt2")
+        const text = document.getElementById("text")
+        switchPlayer(play, text)
+        btn2 = true
     }
 }
 
 function place3(){
-    if (but3 === false){
-        const elementResult = document.getElementById("bt3")
-        elementResult.innerHTML = player
-        switchPlayer()
-        but3 = true
+    if (btn3 === false){
+        const play = document.getElementById("bt3")
+        const text = document.getElementById("text")
+        switchPlayer(play, text)
+        btn3 = true
     }
 }
 
 function place4(){
-    if (but4 === false){
-        const elementResult = document.getElementById("bt4")
-        elementResult.innerHTML = player
-        switchPlayer()
-        but4 = true
+    if (btn4 === false){
+        const play = document.getElementById("bt4")
+        const text = document.getElementById("text")
+        switchPlayer(play, text)
+        btn4 = true
     }
 }
 
 function place5(){
-    if (but5 === false){
-        const elementResult = document.getElementById("bt5")
-        elementResult.innerHTML = player
-        switchPlayer()
-        but5 = true
+    if (btn5 === false){
+        const play = document.getElementById("bt5")
+        const text = document.getElementById("text")
+        switchPlayer(play, text)
+        btn5 = true
     }
 }
 
 function place6(){
-    if (but6 === false){
-        const elementResult = document.getElementById("bt6")
-        elementResult.innerHTML = player
-        switchPlayer()
-        but6 = true
+    if (btn6 === false){
+        const play = document.getElementById("bt6")
+        const text = document.getElementById("text")
+        switchPlayer(play, text)
+        btn6 = true
     }
 }
 
 function place7(){
-    if (but7 === false){
-        const elementResult = document.getElementById("bt7")
-        elementResult.innerHTML = player
-        switchPlayer()
-        but7 = true
+    if (btn7 === false){
+        const play = document.getElementById("bt7")
+        const text = document.getElementById("text")
+        switchPlayer(play, text)
+        btn7 = true
     }
 }
 
 function place8(){
-    if (but8 === false){
-        const elementResult = document.getElementById("bt8")
-        elementResult.innerHTML = player
-        switchPlayer()
-        but8 = true
+    if (btn8 === false){
+        const play = document.getElementById("bt8")
+        const text = document.getElementById("text")
+        switchPlayer(play, text)
+        btn8 = true
     }
 }
 
 function place9(){
-    if (but9 === false){
-        const elementResult = document.getElementById("bt9")
-        elementResult.innerHTML = player
-        switchPlayer()
-        but9 = true
+    if (btn9 === false){
+        const play = document.getElementById("bt9")
+        const text = document.getElementById("text")
+        switchPlayer(play, text)
+        btn9 = true
     }
 }
