@@ -1,7 +1,6 @@
 let btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9
 btn1 = btn2 = btn3 = btn4 = btn5 = btn6 = btn7 = btn8 = btn9 = false
 let game = true
-
 let player = "X"
 /*
  1 | 2 | 3
@@ -10,44 +9,37 @@ let player = "X"
 ---|---|---
  7 | 8 | 9 */
 function checkVictory() {
+    let gameWon = false
     if (btn1 === btn2 && btn2 === btn3 && btn3 !== false){
-        const winner = document.getElementById("winText")
-        winner.innerHTML = `Victory of "${player}"`
-        game = false
+        gameWon = true
     }
-    if (btn4 === btn5 && btn5 === btn6 && btn6 !== false){
-        const winner = document.getElementById("winText")
-        winner.innerHTML = `Victory of "${player}"`
-        game = false
+    else if (btn4 === btn5 && btn5 === btn6 && btn6 !== false){
+        gameWon = true
     }
-    if (btn7 === btn8 && btn8 === btn9 && btn9 !== false){
-        const winner = document.getElementById("winText")
-        winner.innerHTML = `Victory of "${player}"`
-        game = false
+    else if (btn7 === btn8 && btn8 === btn9 && btn9 !== false){
+        gameWon = true
     }
-    if (btn1 === btn4 && btn4 === btn7 && btn7 !== false){
-        const winner = document.getElementById("winText")
-        winner.innerHTML = `Victory of "${player}"`
-        game = false
+    else if (btn1 === btn4 && btn4 === btn7 && btn7 !== false){
+        gameWon = true
     }
-    if (btn2 === btn5 && btn5 === btn8 && btn8 !== false){
-        const winner = document.getElementById("winText")
-        winner.innerHTML = `Victory of "${player}"`
-        game = false
+    else if (btn2 === btn5 && btn5 === btn8 && btn8 !== false){
+        gameWon = true
     }
-    if (btn3 === btn6 && btn6 === btn9 && btn9 !== false){
-        const winner = document.getElementById("winText")
-        winner.innerHTML = `Victory of "${player}"`
-        game = false
+    else if (btn3 === btn6 && btn6 === btn9 && btn9 !== false){
+        gameWon = true
     }
-    if (btn1 === btn5 && btn5 === btn9 && btn9 !== false){
-        const winner = document.getElementById("winText")
-        winner.innerHTML = `Victory of "${player}"`
-        game = false
+    else if (btn1 === btn5 && btn5 === btn9 && btn9 !== false){
+        gameWon = true
     }
-    if (btn3 === btn5 && btn5 === btn7 && btn7 !== false){
+    else if (btn3 === btn5 && btn5 === btn7 && btn7 !== false){
+        gameWon = true
+    }
+
+    if (gameWon === true){
         const winner = document.getElementById("winText")
         winner.innerHTML = `Victory of "${player}"`
+        winner.style.color = "black"
+        winner.style.visibility = "visible";
         game = false
     }
 }

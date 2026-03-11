@@ -2,19 +2,21 @@ body {
   font-family: "Roboto Mono", monospace;
   background-color: lightgray;
   background-position: center;
+  text-align: center
 }
 
-.text {
-  text-align: center;
+.textInvisible{
+  visibility: hidden;
 }
 
 button {
   cursor: pointer;
-  font-size: 64px;
+  font-size: 58px;
   background-color: gray;
   border-radius: 12px;
   width: 64px;
   height: 64px;
+  vertical-align: middle;
 }
 
 button:hover { /*Mouse on top*/
