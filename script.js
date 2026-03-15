@@ -1,5 +1,6 @@
 let btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9
 btn1 = btn2 = btn3 = btn4 = btn5 = btn6 = btn7 = btn8 = btn9 = false
+let plays = 0
 let player = "X"
 const text = document.getElementById("playerText")
 text.innerHTML = `Player "${player}" turn`
@@ -49,6 +50,13 @@ function switchPlayer(play, text) {
             player = "X"
         }
         text.innerHTML = `Player "${player}" turn`
+        plays += 1
+    }
+    if (plays === 9){
+        const winner = document.getElementById("winText")
+        winner.innerHTML = "Draw"
+        winner.style.color = "black"
+        winner.style.visibility = "visible";
     }
 }
 
