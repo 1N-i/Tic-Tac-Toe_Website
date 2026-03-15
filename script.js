@@ -1,13 +1,10 @@
 let btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9
 btn1 = btn2 = btn3 = btn4 = btn5 = btn6 = btn7 = btn8 = btn9 = false
-let game = true
 let player = "X"
-/*
- 1 | 2 | 3
----|---|---
- 4 | 5 | 6
----|---|---
- 7 | 8 | 9 */
+const text = document.getElementById("playerText")
+text.innerHTML = `Player "${player}" turn`
+let game = true
+
 function checkVictory() {
     let gameWon = false
     if (btn1 === btn2 && btn2 === btn3 && btn3 !== false){
@@ -34,24 +31,24 @@ function checkVictory() {
     else if (btn3 === btn5 && btn5 === btn7 && btn7 !== false){
         gameWon = true
     }
+    return gameWon
+}
 
-    if (gameWon === true){
+function switchPlayer(play, text) {
+    play.innerHTML = player
+    if (checkVictory() === true){
         const winner = document.getElementById("winText")
         winner.innerHTML = `Victory of "${player}"`
         winner.style.color = "black"
         winner.style.visibility = "visible";
         game = false
-    }
-}
-
-function switchPlayer(play, text) {
-    text.innerHTML = `Player "${player}" turn`
-    play.innerHTML = player
-    checkVictory()
-    if (player === "X"){
-        player = "O"
     } else {
-        player = "X"
+        if (player === "X"){
+            player = "O"
+        } else {
+            player = "X"
+        }
+        text.innerHTML = `Player "${player}" turn`
     }
 }
 
